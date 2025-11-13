@@ -124,7 +124,7 @@ function disable_woocommerce_scripts()
         }
     }
 }
-add_action('wp_enqueue_scripts', 'disable_woocommerce_scripts', 99);
+add_action('wp_enqueue_scripts', 'disable_woocommerce_scripts', 99)
 
 // function add_lazy_loading_to_images($content) {
 //     return str_replace('<img', '<img loading="lazy"', $content);
