@@ -1,0 +1,268 @@
+// Drag Drop Group Styles
+// Variables
+$primary-blue: #3b82f6;
+$primary-blue-light: rgba(59, 130, 246, 0.1);
+$success-green: #10b981;
+$warning-orange: #f59e0b;
+$error-red: #ef4444;
+$text-dark: #333;
+$text-muted: #666;
+$border-color: #ddd;
+$background-light: #f9f9f9;
+$white: #fff;
+
+// Color palette for groups
+$group-colors: (
+  1: #ef4444,
+  2: #10b981,
+  3: #f59e0b,
+  4: #8b5cf6,
+  5: #f97316,
+  6: #84cc16,
+  7: #dc2626,
+  8: #059669
+);
+
+// Answer Grouping Controls
+#answer-grouping-controls {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: $background-light;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+
+  h4 {
+    margin: 0 0 10px 0;
+    color: $text-dark;
+  }
+
+  #grouping-stats {
+    font-size: 12px;
+    color: $text-muted;
+    margin-bottom: 10px;
+  }
+
+  #grouping-actions {
+    display: none;
+
+    > div {
+      margin-bottom: 10px;
+    }
+
+    #selected-list {
+      font-size: 12px;
+      color: $text-muted;
+    }
+  }
+
+  #groups-summary {
+    margin-top: 15px;
+    display: none;
+
+    h5 {
+      margin: 0 0 10px 0;
+    }
+
+    .group-save-notice {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 4px;
+      font-size: 12px;
+      color: $text-muted;
+
+      em {
+        font-style: normal;
+        color: $primary-blue;
+      }
+    }
+  }
+}
+
+// Answer List Items
+.matrix_sort_answer .answerList li {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+  }
+
+  &.selected-answer {
+    background-color: $primary-blue-light;
+    border-color: $primary-blue;
+  }
+
+  // Selection overlay
+  .answer-selection-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(59, 130, 246, 0.1);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    > div {
+      background: $primary-blue;
+      color: $white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+  // Group indicator
+  .group-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: $white;
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    display: none;
+    z-index: 5;
+
+    span {
+      color: $white;
+    }
+  }
+
+  // Apply group colors
+  @each $group-id, $color in $group-colors {
+    &[data-group-id="#{$group-id}"] {
+      border-left: 4px solid $color;
+      
+      .group-indicator {
+        border-color: $color;
+        background: $color;
+      }
+    }
+  }
+}
+
+// Group items in summary
+.group-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: $white;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+  .group-color-indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+
+    @each $group-id, $color in $group-colors {
+      &[data-group-id="#{$group-id}"] {
+        background: $color;
+      }
+    }
+  }
+
+  .group-info {
+    flex: 1;
+    font-size: 12px;
+
+    strong {
+      color: $text-dark;
+    }
+
+    .group-details {
+      color: $text-muted;
+      font-size: 11px;
+      margin-top: 2px;
+    }
+  }
+
+  .ungroup-button {
+    font-size: 11px;
+    padding: 4px 8px;
+    height: auto;
+    line-height: 1.2;
+  }
+}
+
+// Buttons
+#group-selected-answers,
+#clear-selection,
+.ungroup-button {
+  font-size: 12px;
+  padding: 6px 12px;
+  height: auto;
+  line-height: 1.2;
+}
+
+#group-selected-answers {
+  background: $primary-blue;
+  border-color: $primary-blue;
+  color: $white;
+
+  &:hover {
+    background: darken($primary-blue, 10%);
+    border-color: darken($primary-blue, 10%);
+  }
+
+  &:disabled {
+    background: $text-muted;
+    border-color: $text-muted;
+    cursor: not-allowed;
+  }
+}
+
+#clear-selection {
+  background: $white;
+  border-color: $border-color;
+  color: $text-dark;
+
+  &:hover {
+    background: $background-light;
+  }
+}
+
+.ungroup-button {
+  background: $white;
+  border-color: $error-red;
+  color: $error-red;
+
+  &:hover {
+    background: $error-red;
+    color: $white;
+  }
+}
+
+// Utility classes
+.selected-answer {
+  // Additional styling for selected answers if needed
+}
+
+// Status colors
+.status-saving {
+  color: $warning-orange;
+}
+
+.status-success {
+  color: $success-green;
+}
+
+.status-error {
+  color: $error-red;
+}

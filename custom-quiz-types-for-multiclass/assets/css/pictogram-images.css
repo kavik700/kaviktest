@@ -1,0 +1,278 @@
+/**
+ * Pictogram Images Metabox Styles
+ */
+
+.multiclass-pictogram-images-container {
+    padding: 10px 0;
+}
+
+.pictogram-images-wrapper {
+    margin-bottom: 20px;
+}
+
+.pictogram-images-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+.pictogram-images-list:empty::before {
+    content: "No images added yet. Click 'Add Images' to select images from the media library.";
+    display: block;
+    padding: 30px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background: #f9f9f9;
+    border: 2px dashed #ddd;
+    border-radius: 4px;
+    grid-column: 1 / -1;
+}
+
+.pictogram-image-item {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: visible;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pictogram-image-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: #0073aa;
+}
+
+/* Disable transitions during drag for performance */
+.pictogram-image-item.is-dragging,
+.pictogram-image-item.is-dragging * {
+    transition: none !important;
+}
+
+/* Drag Handle */
+.pictogram-drag-handle {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background: #0073aa;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    cursor: move;
+    transition: background-color 0.15s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    will-change: background-color;
+}
+
+.pictogram-drag-handle:hover {
+    background: #005a87;
+}
+
+.pictogram-drag-handle .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+}
+
+.pictogram-image-preview {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    background: #f5f5f5;
+    overflow: hidden;
+    margin-top: 8px; /* Space for drag handle */
+}
+
+.pictogram-image-preview img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pictogram-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pictogram-image-item:hover .pictogram-image-overlay {
+    opacity: 1;
+}
+
+.pictogram-remove-image {
+    background: #dc3232;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: background 0.2s ease;
+}
+
+.pictogram-remove-image:hover {
+    background: #a00;
+}
+
+.pictogram-remove-image .dashicons {
+    font-size: 16px;
+    line-height: 1;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.pictogram-image-info {
+    padding: 10px;
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pictogram-image-title {
+    font-weight: 500;
+    color: #333;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pictogram-image-id {
+    font-size: 11px;
+    color: #666;
+}
+
+/* Yes/No Answer Selection */
+.pictogram-answer-selection {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.pictogram-answer-label {
+    flex: 1;
+    cursor: pointer;
+    margin: 0;
+}
+
+.pictogram-answer-label input[type="radio"] {
+    display: none;
+}
+
+.pictogram-answer-label .answer-option {
+    display: block;
+    padding: 6px 10px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    user-select: none;
+}
+
+.pictogram-answer-label:hover .answer-option {
+    border-color: #999;
+}
+
+.pictogram-answer-label input[type="radio"]:checked + .answer-option {
+    border-color: #0073aa;
+    background: #0073aa;
+    color: #fff;
+}
+
+.pictogram-answer-label input[type="radio"]:checked + .answer-option.answer-yes {
+    border-color: #46b450;
+    background: #46b450;
+}
+
+.pictogram-answer-label input[type="radio"]:checked + .answer-option.answer-no {
+    border-color: #dc3232;
+    background: #dc3232;
+}
+
+.pictogram-images-actions {
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pictogram-images-actions .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.pictogram-images-actions .button .dashicons {
+    margin-top: 3px;
+}
+
+.pictogram-images-actions .description {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Sortable placeholder */
+.pictogram-sortable-placeholder {
+    border: 2px dashed #0073aa !important;
+    background: #e3f2fd !important;
+    visibility: visible !important;
+    border-radius: 4px !important;
+    opacity: 0.6 !important;
+}
+
+/* Sortable helper (the item being dragged) */
+.ui-sortable-helper {
+    opacity: 0.95 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25) !important;
+    z-index: 1000 !important;
+    transition: none !important;
+}
+
+.ui-sortable-helper .pictogram-drag-handle {
+    background: #46b450 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+    .pictogram-images-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .pictogram-image-info {
+        padding: 8px;
+    }
+
+    .pictogram-image-title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pictogram-images-list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}

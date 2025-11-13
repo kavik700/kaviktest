@@ -1,0 +1,48 @@
+.mc-concentration_numbers_short_term {
+    .countdown {
+        text-align: center;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+    }
+
+    .correct-answer {
+        text-align: center;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-weight: bold;
+    }
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_listItem.mc-concentration_numbers_short_term {
+     .wpProQuiz_question ul.wpProQuiz_questionList {
+        display: none;
+        width: 50%;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 auto !important;
+        justify-content: space-around;
+        margin-top: 45px !important;
+    }
+
+    .wpProQuiz_questionListItem {
+        .is-selected {
+            background-color: #3b5bf6 !important;
+            color: #fff;
+        }
+
+        flex: 1 1 calc(25% - 10px);
+    }
+
+    li.wpProQuiz_questionListItem  {
+        label {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

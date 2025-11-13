@@ -1,0 +1,90 @@
+.mc-different_perspective {
+    .wpProQuiz_questionListItem  {
+        display: none !important;
+    }
+
+    .perspective-container {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin: 50px auto;
+        background-color: #96a7c4;
+        display: flex;
+        border-radius: 15px;
+
+        .inner-container {
+            margin: 40px;
+            width: calc(100% - 80px);
+            height: calc(100% - 80px);
+            background-size: contain !important;
+        }
+    }
+    
+    .arrow {
+        position: absolute;
+        color: #fff;
+        display: flex;
+        cursor: pointer;
+
+        &:hover, &.selected {
+            color: blue;
+        }
+
+        span {
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        &.long span {
+            font-size: 48px;
+        }
+    }
+
+    .arrow-0 {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    
+    .arrow-45 {
+        top: 0;
+        right: 0;
+        transform: rotate(45deg);
+    }
+    
+    .arrow-90 {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%) rotate(90deg);
+    }
+    
+    .arrow-135 {
+        bottom: 0;
+        right: 0;
+        transform: rotate(135deg);
+    }
+    
+    .arrow-180 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+    }
+    
+    .arrow-225 {
+        bottom: 0;
+        left: 0;
+        transform: rotate(225deg);
+    }
+    
+    .arrow-270 {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) rotate(270deg);
+    }
+    
+    .arrow-315 {
+        top: 0;
+        left: 0;
+        transform: rotate(315deg);
+    }
+}

@@ -1,0 +1,36 @@
+.calculator-popup {
+    button {
+        color: #000 !important;
+        box-shadow: inset -1px -1px 1px 1px !important;
+
+        &:hover, &:focus {
+            background-color: #dbd0d0;
+            transition: 0.2s all;
+        }
+    }
+
+    width: 250px !important;
+
+    .calculator-close,  .calculator-use, .calculator-erase{
+        min-width: 100px;
+    }
+}
+
+.mc-calculator {
+    .calculator-trigger {
+        height: 40px !important;
+        position: absolute;
+        left: 10px;
+        top: 1px;
+    }
+}
+
+.mc-calculator.wpProQuiz_listItem  {
+    label {
+        position: relative;
+    }
+
+    .wpProQuiz_questionInput {
+        padding-left: 60px !important;
+    }
+}

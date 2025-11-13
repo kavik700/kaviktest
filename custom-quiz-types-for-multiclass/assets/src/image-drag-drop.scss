@@ -1,0 +1,249 @@
+.draggable {
+    width: 100px;
+    height: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s ease;
+    cursor: grab;
+    position: relative;
+    pointer-events: auto;
+    touch-action: none;
+}
+
+.dropzone {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.draggable.cover {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it covers the drop zone */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px;
+    min-height: 150px;
+    border: 1px dashed #ddd;
+}
+
+.mc-image_drag_drop {
+    .wpProQuiz_questionList, .wpProQuiz_sortStringList, .wpProQuiz_header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .mc-image-drag-drop-container {
+        flex-wrap: wrap;
+
+        .mc-image-dropdowns-answers-wrapper {
+            min-width: 100%;
+            order: 1;
+        }
+    }
+
+    .drag-drop-target-image {
+        order: 2;
+    }
+}
+
+.drag-drop-target-image {
+    height: 100% !important;
+}
+
+.mc-image-drag-drop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .drag-drop-target-image,
+    .mc-image-dropdowns-answers-wrapper {
+        width: 100%;
+    }
+
+    @media (min-width: 600px) {
+        .drag-drop-target-image,
+        .mc-image-dropdowns-answers-wrapper {
+            width: 50%;
+        }
+    }
+
+    &.text-options {
+        flex-direction: column;
+        align-items: center;
+
+        .drag-drop-target-image {
+            font-size: 12px !important;
+
+            .draggable {
+                padding:  0 3px !important;
+                line-height: normal;
+                border-radius: 0;
+            }
+        }
+
+        .draggable {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            color: #000;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding: 0 20px;
+        }
+
+        .mc-image-dropdowns-answers {
+            margin-top: 30px;
+            border: none;
+            padding-bottom: 60px;
+        }
+    }
+
+    &.img-options {
+        .mc-image-dropdowns-answers {
+            width: auto !important;
+        }
+    }
+
+    .mc-image-dropdowns-answers-wrapper {
+        flex: 1;
+        overflow: hidden;
+        padding-bottom: 15px;
+    }
+
+    #initialContainer {
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        gap: 10px;
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+
+  
+}
+
+.dragging {
+    opacity: 0.7;
+    cursor: grabbing;
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    position: relative;
+}
+
+#initialContainer.container-dragging {
+    background-color: rgba(18, 188, 18, 0.12) !important;
+    border-radius: 10px !important;
+}
+
+.shake-wrapper {
+    display: inline-block;
+    width: auto !important;
+    cursor: grab;
+    position: relative;
+    
+    // Ensure the wrapper doesn't interfere with drag events
+    .draggable {
+        width: 100%;
+        height: 100%;
+        pointer-events: auto;
+        touch-action: none;
+    }
+
+    &:hover {
+        animation-play-state: paused !important;
+    }
+    
+    // When actively dragging
+    &:active,
+    &.dragging {
+        cursor: grabbing;
+        animation-play-state: paused !important;
+    }
+}
+
+.text-options {
+    .shake-wrapper {
+        display: inline-block;
+        width: 100%;
+        
+        // Make the entire wrapper area interactive for text options
+        cursor: grab;
+    
+        &:hover .draggable {
+            background-color: #ededf5;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            border-radius: 4px;
+            animation: none !important;
+        }
+        
+        &:active {
+            cursor: grabbing;
+        }
+    }
+}
+
+.draggable {
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes shine-sweep {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+@keyframes gentle-glow {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+}
+  
+.drag-drop-target-image .dropzone {
+    position: relative;
+    overflow: hidden;
+    animation: gentle-glow 2s ease-in-out infinite;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(59, 130, 246, 0.1) 50%,
+            transparent 100%
+        );
+        background-size: 200% 100%;
+        animation: shine-sweep 3s ease-in-out infinite;
+        pointer-events: none;
+    }
+}

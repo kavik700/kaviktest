@@ -1,0 +1,34 @@
+<svg width="1358" height="330" viewBox="0 0 1358 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style type='text/css'>
+@-webkit-keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 1894.0478515625px;
+    stroke-dasharray: 1894.0478515625px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1894.0478515625px;
+  }
+}
+
+@keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 1894.0478515625px;
+    stroke-dasharray: 1894.0478515625px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1894.0478515625px;
+  }
+}
+
+.svg-elem-1 {
+  -webkit-animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+          animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+
+</style>
+<path d="M2.03611 320.156C127.179 341.728 269.648 214.711 446.894 100.368C655.302 -34.0792 889.106 90.1675 757.318 224.67C671.706 312.046 584.429 224.105 749.807 171.217C895.483 124.629 1208.36 177.808 1352.49 4.45595" stroke="#31D47A" stroke-width="13" class="svg-elem-1"></path>
+</svg>

@@ -1,0 +1,101 @@
+.concentration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 20px repeat(3, 50px);
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .grid-item {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .red-box {
+        background-color: red;
+    }
+    
+    .axis-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    
+    #y-axis-label {
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+        text-wrap: nowrap;
+    }
+    
+    #x-axis-label {
+        position: absolute;
+        text-wrap: nowrap;
+        left: 50px;
+    }
+    
+    .has-y-axis-label {
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .has-x-axis-label {
+        position: relative;
+    }
+
+    .round-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .round-badge {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .round-label {
+        font-size: 0.9rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.25rem;
+    }
+    
+    .round-numbers {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .round-separator {
+        margin: 0 0.25rem;
+        color: #999;
+    }
+    
+    .current-round {
+        color: #007bff;
+    }
+}
+
+.mc-concentration {
+    .wpProQuiz_questionList {
+        display: none !important;
+    }
+}

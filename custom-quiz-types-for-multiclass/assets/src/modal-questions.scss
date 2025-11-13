@@ -1,0 +1,47 @@
+.question-modals-container {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+
+    .question-modal {
+      transition: transform 0.3s, color 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+}
+
+.jquery-modal {
+    z-index: 99999 !important;
+
+    .adobe-dc-view {
+      height: 80vh;
+    }
+
+    .modal {
+        width: 90%; // Default width
+        max-width: 900px;
+        height: auto; // Allow height to adjust automatically
+
+        // Adjustments for small screens
+        @media (max-width: 600px) {
+          max-width: 100%;
+          height: auto;
+          padding: 15px;
+        }
+      
+        // Adjustments for medium screens
+        @media (min-width: 601px) and (max-width: 1200px) {
+          max-width: 700px;
+          height: auto;
+        }
+      
+        // Adjustments for large screens
+        @media (min-width: 1201px) {
+          max-width: 900px;
+          height: auto;
+          margin-top: 20px;
+        }
+      }      
+}

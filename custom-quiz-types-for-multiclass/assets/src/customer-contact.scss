@@ -1,0 +1,98 @@
+.speech-bubble {
+    display: none;
+    position: relative;
+    background-color: #00aaff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.wpProQuiz_question_text .speech-bubble p {
+    color: #fff !important;
+}
+
+.speech-bubble {
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px; /* Position at the bottom */
+        border-width: 10px;
+        border-style: solid;
+        border-color: #00aaff transparent transparent transparent;
+    }
+    
+    &.left::after {
+        left: 20px;
+    }
+
+    &.right::after {
+        right: 20px;
+    }
+}
+
+.mc-customer_contact {
+    .wpProQuiz_question_text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wpProQuiz_questionList {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 15px;
+
+        .wpProQuiz_questionListItem {
+            background-color: #e4e3e3;
+            width: 25%;
+            border-radius: 16px !important;
+            border: 2px solid #ddd;
+            text-align: center;
+
+            &:hover {
+                border: 2px solid #489adf;
+            }
+
+            label {
+                border: none !important;
+                &::before {
+                    display: none !important;
+                }
+                &.is-selected {
+                    background-color: #489adf !important;
+
+                    &.correct {
+                        background-color: green !important;
+                        color: #fff;
+                    }
+                }
+
+                height: 100%;
+            }
+        }
+    }
+
+    .mc-cc-error-message, .mc-cc-err {
+        display: none;
+    }
+
+    .mc-cc-errors {
+        width: 100%;
+        min-height: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #e4e3e3;
+        margin-bottom: 10px;
+    }
+
+    .mc-cc-error-message {
+        width: 100%;
+    }
+
+    .wpProQuiz_TipButton {
+        display: none !important;
+    }
+}

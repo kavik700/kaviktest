@@ -1,0 +1,46 @@
+/**
+ * Essay Word Counter Styles
+ */
+
+.sp-essay-word-counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    
+    .sp-word-counter-label {
+        font-weight: 500;
+        color: #555;
+    }
+    
+    .sp-word-count {
+        font-weight: 600;
+        color: #2271b1;
+        min-width: 30px;
+        text-align: right;
+    }
+}
+
+// Make sure textarea has proper spacing when word counter is present
+.wpProQuiz_questionEssay.sp-has-word-counter {
+    margin-bottom: 0;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .sp-essay-word-counter {
+        font-size: 13px;
+        padding: 6px 10px;
+        
+        .sp-word-count {
+            min-width: 25px;
+        }
+    }
+}
+

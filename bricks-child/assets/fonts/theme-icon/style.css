@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Studypeak';
+  src:  url('fonts/Studypeak.eot?1kc6i');
+  src:  url('fonts/Studypeak.eot?1kc6i#iefix') format('embedded-opentype'),
+    url('fonts/Studypeak.ttf?1kc6i') format('truetype'),
+    url('fonts/Studypeak.woff?1kc6i') format('woff'),
+    url('fonts/Studypeak.svg?1kc6i#Studypeak') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Studypeak' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pdf:before {
+  content: "\e907";
+}
+.icon-add-more:before {
+  content: "\e908";
+}
+.icon-award-certificates:before {
+  content: "\e909";
+}
+.icon-certificate:before {
+  content: "\e90a";
+}
+.icon-check-mark:before {
+  content: "\e90b";
+}
+.icon-cloud-arrow-up:before {
+  content: "\e90c";
+}
+.icon-confidence:before {
+  content: "\e90d";
+}
+.icon-copy:before {
+  content: "\e90e";
+}
+.icon-thankyou_icon:before {
+  content: "\e90f";
+}
+.icon-user-edit:before {
+  content: "\e910";
+}
+.icon-quiz-list:before {
+  content: "\e906";
+}
+.icon-square-grid:before {
+  content: "\e900";
+}
+.icon-location:before {
+  content: "\e901";
+}
+.icon-datepicker:before {
+  content: "\e902";
+}
+.icon-square-sidebar:before {
+  content: "\e903";
+}
+.icon-square-play:before {
+  content: "\e904";
+}
+.icon-square-check:before {
+  content: "\e905";
+}

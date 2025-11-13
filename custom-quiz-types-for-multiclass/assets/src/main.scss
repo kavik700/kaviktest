@@ -1,0 +1,177 @@
+@import './color-combination.scss';
+@import '~jquery-modal/jquery.modal.min.css';
+@import './modal-questions.scss';
+@import './concentration.scss';
+@import './concentration-numbers';
+@import './concentration-numbers-short-term';
+@import './customer-contact';
+@import './image-drag-drop';
+@import './calculator';
+@import './numerical-processing';
+@import './different-perspective';
+@import './pictogramm.scss';
+@import './topic-time-limit.scss';
+@import './exam-simulation.scss';
+@import './organization-calendar.scss';
+@import './report-problem.scss';
+@import './quiz-time-limit-disabler.scss';
+@import './hide-quz-grades.scss';
+@import './essay-course.scss';
+@import './essay-word-counter.scss';
+
+.single-sfwd-topic {
+  .times-up {
+    padding: 0;
+  }
+}
+
+.mc-hide_answers {
+  .wpProQuiz_questionList {
+    display: none !important;
+  }
+}
+
+.wpProQuiz_question_text-calendar {
+  table {
+    margin: 0 !important;
+  }
+
+  .fc-event {
+    text-decoration: none !important;
+  }
+
+  .external-events-container {
+    width: 20%;
+    border: 1px solid #ddd;
+    padding: 5px;
+    overflow-y: scroll;
+    max-height: 550px;
+    overflow-x: hidden;
+
+    p {
+      margin-bottom: 0px;
+      line-height: normal;
+    }
+  }
+}
+
+.fc-header-toolbar {
+  display: none !important;
+}
+
+.external-events-backup {
+  display: none;
+}
+
+#appointment-list {
+  margin-bottom: 20px;
+}
+  
+  .appointment {
+    padding: 5px;
+    background-color: #4285f4;
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 961px) {
+    .calendar {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+
+  .fc-event {
+    font-size: 12px;
+    padding: 5px !important;
+  }
+
+  .fc-event-main {
+    padding: 0 !important;
+  }
+  
+
+.external-events-container .fc-event {
+  margin: 10px 0;
+}
+
+.wpProQuiz_question_text-calendar {
+  display: flex;
+  gap: 20px;
+}
+
+/* hide week dates */
+.fc-toolbar-title {
+  display: none;
+}
+
+.remember-btn {
+  color: #0a62bf;
+
+  &:hover {
+    color: #2668a5;
+  }
+}
+
+.mc-default-event {
+  background-color: #e69500 !important;
+  border: #e69500 !important;
+}
+
+.wpProQuiz_reviewButtons {
+  display: none;
+}
+
+textarea.wpProQuiz_questionInput {
+  border-radius: 6px !important;
+  resize: none;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type='text'] {
+  width: calc(100% - 60px) !important;
+}
+
+.fc-daygrid-block-event, .fc-event-main {
+  overflow: auto;
+}
+
+.fc-v-event .fc-event-title {
+  overflow: auto;
+  line-height: var(--fc-small-font-size);
+  height: 100%;
+}
+
+.learndash-cpt-sfwd-courses-7234-parent .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem > table td:first-child {
+  border-right: none !important;
+}
+
+.wpProQuiz_AnswerMessage {
+  margin-top: 10px !important;
+}
+
+.ld-item-list-items {
+  &.hide {
+    display: none;
+  }
+}
+
+/* Shuffle Next Step and Previous Step Buttons on mobile */
+@media (max-width: 640px) {
+  /* Reset for Learndash's column-reverse */
+  .learndash-wrapper .ld-content-actions {
+    flex-direction: column !important;
+  }
+
+  .ld-content-actions .ld-content-action.mc-next-step {
+    order: -1;
+  }
+}
+
+.wpProQuiz_buttonsContainer input[name="next"], input[name="endQuizSummary"] {
+  margin-left: auto !important;
+}
+
+.mc-question-instructions {
+  margin-bottom: 15px;
+}

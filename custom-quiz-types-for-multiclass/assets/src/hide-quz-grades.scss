@@ -1,0 +1,19 @@
+.mc-quiz-grades-hidden {
+    .mc-review-ungraded:not(.wpProQuiz_reviewQuestionTarget) {
+        background-color: #a1b6c9 !important;
+        color: #fff !important;
+    }
+
+    .mc-quiz-result, .wpProQuiz_points, .wpProQuiz_correct > span, .wpProQuiz_incorrect > span {
+        display: none !important;
+    }
+
+    .learndash-quiz-review-legend-item-answered {
+        display: block !important;
+    }
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_listItem.mc-ungraded .wpProQuiz_question ul.wpProQuiz_questionList[data-type="free_answer"] label {
+    padding: 0 !important;
+    border: none !important;
+}

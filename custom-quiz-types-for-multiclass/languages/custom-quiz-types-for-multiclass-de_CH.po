@@ -1,0 +1,637 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Quiz Types For Multiclass\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-14 22:13+0000\n"
+"PO-Revision-Date: 2025-10-30 22:37+0000\n"
+"Last-Translator: Mustafa Kapusuz\n"
+"Language-Team: German (Switzerland)\n"
+"Language: de_CH\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.1; wp-6.8.3\n"
+"X-Domain: custom-quiz-types-for-multiclass"
+
+#: src/class-ajax.php:122
+#, php-format
+msgid ""
+"<html><body><p>A problem has been reported on a %s.</p><p><strong>Quiz:"
+"</strong> %d - <a href='%s'>%s</a></p><p><strong>Question:</strong> %d - <a "
+"href='%s'>%s</a></p><p><strong>Reporting User:</strong> %s (#%d)</p><p>"
+"<strong>Issues:</strong> %s</p><p><strong>Details:</strong> %s</p></body>"
+"</html>"
+msgstr ""
+
+#: src/class-ajax.php:141
+#, php-format
+msgid ""
+"<html><body><p>A problem has been reported on a %s.</p><p><strong>Topic:"
+"</strong> %d - <a href='%s'>%s</a></p><p><strong>Reporting User:</strong> %s "
+"(#%d)</p><p><strong>Issues:</strong> %s</p><p><strong>Details:</strong> "
+"%s</p></body></html>"
+msgstr ""
+
+#: src/class-exam-simulation.php:482
+msgid "Activate Exam Simulation?"
+msgstr ""
+
+#: src/admin/class-pictogram-images.php:111
+msgid "Add Images"
+msgstr ""
+
+#: src/admin/class-pictogram-images.php:114
+msgid ""
+"Add images and select Yes/No for each. The answer table will be generated "
+"automatically."
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds custom quiz types for Learndash"
+msgstr ""
+
+#: src/class-core.php:136
+msgid ""
+"An error occurred while submitting your report. Please try again. If the "
+"error persists, send an email to info@multiclass.ch detailing your issue."
+msgstr ""
+
+#: src/class-exam-simulation.php:296
+msgid "archiviert am:"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:84
+msgid "Audio File:"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:56
+msgid "Audio Options"
+msgstr ""
+
+#: src/class-exam-simulation.php:285
+msgid ""
+"Auf diesem Bildschirm findest du archivierte Prüfungssimulationsergebnisse."
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:299
+msgid "Ausstehend"
+msgstr ""
+
+#: src/class-modals.php:124
+msgid "Auto Start:"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:812
+msgid "Back"
+msgstr ""
+
+#: templates/report-problem.php:36
+msgid "Cancel"
+msgstr ""
+
+#: templates/exam-simulation/show_quiz_result_box.php:71
+msgid "Check Answers"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:42 src/admin/class-audio-metabox.php:111
+msgid "Choose Audio File"
+msgstr ""
+
+#: src/class-core.php:532
+msgid "Color Combination"
+msgstr ""
+
+#: src/class-essay-teacher-comment.php:53
+msgid "Comment:"
+msgstr ""
+
+#: src/class-modals.php:137
+msgid "Content:"
+msgstr ""
+
+#: src/class-core.php:135
+msgid "Correct Questions"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:239
+msgid "Course:"
+msgstr ""
+
+#. Name of the plugin
+msgid "Custom Quiz Types For Multiclass"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:255
+msgid "Draft"
+msgstr ""
+
+#: src/admin/class-pictogram-images.php:147
+msgid "Drag to reorder"
+msgstr ""
+
+#: src/class-core.php:511
+msgid "e.g. 23"
+msgstr ""
+
+#: src/class-modals.php:132
+msgid "e.g., fas fa-star"
+msgstr ""
+
+#: src/class-core.php:758
+msgid "Enable 3-2-1 countdown:"
+msgstr ""
+
+#: src/class-course-essay-marker.php:61
+msgid "Enable this option to mark this course as an essay-based course."
+msgstr ""
+
+#: src/class-core.php:477
+msgid "Enter Coordinates"
+msgstr ""
+
+#: src/class-core.php:808
+msgid "Enter instructions for the question here..."
+msgstr ""
+
+#: src/class-core.php:803
+msgid "Enter instructions that will appear above the question buttons:"
+msgstr ""
+
+#: src/class-core.php:510
+msgid ""
+"Enter the coordinates here without spaces or commas (1st digit X-axis, 2nd "
+"digit Y-axis):"
+msgstr ""
+
+#: src/class-core.php:751
+msgid "Enter the time limit in seconds:"
+msgstr ""
+
+#: src/class-topic-time-lock.php:34
+msgid "Enter time lock in seconds:"
+msgstr ""
+
+#: src/class-essay-teacher-comment.php:54
+msgid "Enter your feedback for the student..."
+msgstr ""
+
+#: src/class-course-essay-marker.php:29
+msgid "Essay Course Settings"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:33
+msgid "Essay Display Settings"
+msgstr ""
+
+#: src/class-core.php:659 src/class-core.php:676
+msgid "Events"
+msgstr ""
+
+#: src/class-exam-simulation.php:458
+msgid "Exam Simulation Settings"
+msgstr ""
+
+#: templates/course-steps.php:199
+msgid "Go back to the course view"
+msgstr "Zurück zum Kurse"
+
+#: templates/show_quiz_result_box.php:307
+msgid "Go to Course"
+msgstr ""
+
+#: templates/essay-course/show_quiz_result_box.php:95
+msgid "Go to My Courses"
+msgstr ""
+
+#: templates/show_quiz_result_box.php:379
+#: templates/exam-simulation/show_quiz_result_box.php:60
+#: templates/exam-simulation/show_quiz_result_box.php:81
+#, php-format
+msgid "Go to Next %s"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:256
+msgid "Graded"
+msgstr ""
+
+#: templates/essay-course/show_quiz_result_box.php:64
+msgid "Great! You have successfully submitted your essay."
+msgstr "Super! Du hast deinen Aufsatz somit eingereicht."
+
+#: src/class-core.php:191
+msgid "Has errors"
+msgstr ""
+
+#: src/class-customer-contact.php:54
+msgid "Height"
+msgstr ""
+
+#: templates/report-problem.php:15
+msgid ""
+"Help us improve by letting us know what's wrong. Select the issue from the "
+"options below."
+msgstr ""
+
+#: src/class-modals.php:131
+msgid "Icon Class:"
+msgstr ""
+
+#: src/class-image-drag-drop.php:205
+msgid "Interactive Draggable Area"
+msgstr ""
+
+#: src/class-core.php:193
+msgid "Is confusing"
+msgstr ""
+
+#: src/class-core.php:190
+msgid "Is not correct"
+msgstr ""
+
+#: src/class-core.php:192
+msgid "Is unclear"
+msgstr ""
+
+#: src/class-exam-simulation.php:318
+msgid "Keine Resultate vorhanden"
+msgstr ""
+
+#: src/class-exam-simulation.php:443
+msgid "Laden"
+msgstr ""
+
+#: src/admin/class-quizzes-by-question-type.php:137
+msgid "LearnDash Answer Types"
+msgstr ""
+
+#: src/class-customer-contact.php:61
+msgid "Left"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:123
+msgid "Listening Limit:"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:916
+msgid "Lösung"
+msgstr ""
+
+#: src/class-course-essay-marker.php:58
+msgid "Mark this course as Essay Course"
+msgstr ""
+
+#: src/admin/class-quizzes-by-question-type.php:131
+msgid "MultiClass Question Types"
+msgstr ""
+
+#: src/class-ajax.php:113
+msgid "Multiclass: Problem Reported by User"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mustafa Kapusuz"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:1524
+#: src/admin/class-pictogram-images.php:168
+msgid "No"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:44 src/admin/class-audio-metabox.php:103
+msgid "No audio file selected"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:168
+msgid "No essay submissions found."
+msgstr ""
+
+#: src/class-audio.php:60 src/class-audio.php:187
+msgid "No more plays available (used %d/%d)."
+msgstr ""
+
+#: templates/exam-simulation/show_quiz_result_box.php:69
+msgid "No more quizzes available in this course."
+msgstr ""
+
+#: src/admin/class-quizzes-by-question-type.php:192
+msgid "No quizzes found with this question type."
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:257
+msgid "Not Graded"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:134
+msgid ""
+"Number of times a student can listen to this audio. Set to 0 for unlimited."
+msgstr ""
+
+#. Metabox ID
+#: src/admin/class-numerical-processing.php:19
+msgid "Numerical Processing Capacity Interval (ms)"
+msgstr ""
+
+#: src/class-modals.php:119 src/class-modals.php:126
+msgid "Off"
+msgstr ""
+
+#: src/class-modals.php:120 src/class-modals.php:127
+msgid "On"
+msgstr ""
+
+#: src/class-core.php:478
+msgid ""
+"One of the nine fields will appear red. It has precisely defined coordinates."
+" Capture the coordinates as quickly as possible. Enter them into the "
+"provided field without spaces or commas."
+msgstr ""
+
+#: src/class-core.php:194
+msgid "Other"
+msgstr ""
+
+#: templates/report-problem.php:29
+msgid "Please describe the issue in detail. (Optional)"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:129
+msgid "Please log in to view your essay submissions."
+msgstr ""
+
+#: templates/report-problem.php:26
+msgid "Please select at least one issue."
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:267
+msgid "Points:"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:254
+msgid "Published"
+msgstr ""
+
+#: src/admin/class-quizzes-by-question-type.php:185
+msgid "question"
+msgid_plural "questions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/class-core.php:712
+msgid "Question Instructions"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:276
+msgid "Question:"
+msgstr ""
+
+#: src/admin/class-quizzes-by-question-type.php:173
+msgid "quiz"
+msgid_plural "quizzes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/class-core.php:722
+msgid "Quiz Display Settings"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:245
+msgid "Quiz:"
+msgstr ""
+
+#: src/admin/class-quizzes-by-question-type.php:54
+#: src/admin/class-quizzes-by-question-type.php:55
+msgid "Quizzes by Question Type"
+msgstr ""
+
+#: src/class-core.php:286
+msgid "Remaining time:"
+msgstr "Verbleibende Zeit:"
+
+#: src/admin/class-pictogram-images.php:70
+#: src/admin/class-pictogram-images.php:155
+msgid "Remove"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:118
+msgid "Remove Audio"
+msgstr ""
+
+#: templates/report-problem.php:14
+msgid "Report a Problem"
+msgstr ""
+
+#: src/class-customer-contact.php:62
+msgid "Right"
+msgstr ""
+
+#: src/class-core.php:469
+msgid "Round"
+msgstr ""
+
+#: src/class-exam-simulation.php:437
+msgid "Schliessen"
+msgstr ""
+
+#: src/class-modals.php:117
+msgid "Select On/Off:"
+msgstr ""
+
+#: src/admin/class-pictogram-images.php:68
+msgid "Select Pictogram Images"
+msgstr ""
+
+#: templates/report-problem.php:33
+msgid "Send"
+msgstr ""
+
+#: src/admin/class-numerical-processing.php:36
+msgid "Set the interval in milliseconds:"
+msgstr ""
+
+#: src/class-core.php:552
+msgid "Show answers (cuts 20 seconds)"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:62
+msgid "Show essay question responses in My Essays screen"
+msgstr ""
+
+#: src/class-core.php:771
+msgid "Show question titles?"
+msgstr ""
+
+#. ID
+#: src/class-customer-contact.php:19
+msgid "Speech Bubble Coordinates"
+msgstr ""
+
+#: src/class-customer-contact.php:59
+msgid "Speech Bubble Position"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:250
+msgid "Status:"
+msgstr ""
+
+#: templates/essay-course/learndash_quiz_messages.php:268
+msgid "Submit essay"
+msgstr "Aufsatz abgeben"
+
+#: src/class-student-essay-submissions-shortcode.php:234
+msgid "Submitted:"
+msgstr ""
+
+#: src/class-essay-teacher-comment.php:30
+#: src/class-essay-teacher-comment.php:146
+msgid "Teacher's Feedback"
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:294
+msgid "Teacher's Feedback:"
+msgstr ""
+
+#: src/class-topic-time-lock.php:107
+#, php-format
+msgid ""
+"The 60-minute timer is now active. You can continue with the Pictogram "
+"Recall quiz on %s at %s."
+msgstr ""
+
+#: src/class-ajax.php:158
+msgid "There was an error sending the email. Please try again."
+msgstr ""
+
+#: src/class-core.php:138
+msgid "This action will reload the page. Do you want to continue?"
+msgstr ""
+
+#: src/class-essay-teacher-comment.php:58
+msgid "This feedback will be displayed to the student on the frontend."
+msgstr ""
+
+#: src/admin/class-pictogram-images.php:87
+msgid ""
+"This metabox is only available when \"Pictogram\" question type is selected."
+msgstr ""
+
+#: src/class-audio.php:57 src/class-audio.php:188
+msgid "time"
+msgstr ""
+
+#: src/class-core.php:133
+msgid "Time is up!"
+msgstr ""
+
+#: templates/show_quiz_time_limit_box.php:31
+msgid "Time limit"
+msgstr ""
+
+#: src/class-core.php:702
+msgid "Time Limit (seconds)"
+msgstr ""
+
+#: src/class-topic-time-lock.php:22
+msgid "Time Lock (in seconds)"
+msgstr ""
+
+#: src/class-audio.php:57 src/class-audio.php:189
+msgid "times"
+msgstr ""
+
+#: src/class-core.php:732
+msgid "Ungraded Response Explanation"
+msgstr ""
+
+#: src/admin/class-pictogram-images.php:69
+msgid "Use Images"
+msgstr ""
+
+#: src/admin/class-audio-metabox.php:43
+msgid "Use this audio"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:227
+msgid "Verbleibende Zeit für die Frage:"
+msgstr ""
+
+#: src/class-exam-simulation.php:60
+msgid "Vorherige Ergebnisse"
+msgstr ""
+
+#: templates/essay-course/show_quiz_result_box.php:68
+msgid ""
+"We will review it, and you will be able to view it under 'my essays' in your "
+"profile. See you soon!"
+msgstr ""
+"Wir werden diesen prüfen und du wirst ihn unter 'meine Aufsätze' in deinem "
+"Profil anschauen können. Bis dann!"
+
+#: src/class-student-essay-submissions-shortcode.php:66
+msgid ""
+"When checked, student essay submissions from this quiz will be displayed in "
+"the My Essays screen."
+msgstr ""
+
+#: src/class-customer-contact.php:50
+msgid "Width"
+msgstr ""
+
+#: src/class-exam-simulation.php:56
+msgid "Wiederholen"
+msgstr ""
+
+#: src/class-course-essay-marker.php:156
+msgid "Write an essay"
+msgstr "Aufsatz schreiben"
+
+#: src/class-core.php:134
+msgid "Wrong Questions"
+msgstr ""
+
+#: src/class-customer-contact.php:42
+msgid "X Coordinate"
+msgstr ""
+
+#: src/class-core.php:507
+msgid "X-Axis"
+msgstr ""
+
+#: src/class-customer-contact.php:46
+msgid "Y Coordinate"
+msgstr ""
+
+#: src/class-core.php:488
+msgid "Y-Axis"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:1520
+#: src/admin/class-pictogram-images.php:164
+msgid "Yes"
+msgstr ""
+
+#: src/class-topic-time-lock.php:114
+msgid "You can continue now!"
+msgstr ""
+
+#: src/class-audio.php:58 src/class-audio.php:186
+#, php-format
+msgid "You can listen to this audio %d more %s (%d/%d)."
+msgstr ""
+
+#: src/class-audio.php:190
+msgid "You have reached the listening limit for this audio."
+msgstr ""
+
+#: src/class-core.php:137
+msgid "Your report has been submitted successfully."
+msgstr ""
+
+#: src/class-student-essay-submissions-shortcode.php:285
+msgid "Your Submission:"
+msgstr ""
+
+#: src/class-exam-simulation.php:64
+msgid "Zertifikat"
+msgstr ""

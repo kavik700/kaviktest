@@ -1,0 +1,50 @@
+.mc-concentration_numbers {
+    .wpProQuiz_questionListItem {
+        @media (min-width: 768px) {
+            min-width: 460px !important;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        p {
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .wpProQuiz_cloze {
+            border: none !important;
+        }
+    }
+
+    .wpProQuiz_questionList {
+        display: flex !important;
+        justify-content: center;
+        overflow: hidden !important;
+    }
+
+    .wpProQuiz_questionListItem p {
+        padding: 10px 0 !important;
+        word-spacing: 10px;
+    }
+
+    .wpProQuiz_cloze {
+        width: 180px !important;
+
+        span {
+            display: flex;
+            gap: 0;
+            align-items: center;
+        }
+
+        input {
+            width: 20px !important;
+            height: 20px !important;
+            margin-right: 10px !important;
+            margin-left: 25px !important;
+        }
+    }
+}

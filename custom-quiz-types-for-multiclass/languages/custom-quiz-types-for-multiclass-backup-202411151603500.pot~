@@ -1,0 +1,240 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Quiz Types For Multiclass\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-15 15:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+"X-Domain: custom-quiz-types-for-multiclass"
+
+#: src/class-exam-simulation.php:318
+msgid "Activate Exam Simulation?"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds custom quiz types for Learndash"
+msgstr ""
+
+#: src/class-modals.php:124
+msgid "Auto Start:"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:483
+msgid "Back"
+msgstr ""
+
+#: templates/exam-simulation/show_quiz_result_box.php:71
+msgid "Check Answers"
+msgstr ""
+
+#: src/class-exam-simulation.php:273
+msgid "Close"
+msgstr ""
+
+#: src/class-core.php:479
+msgid "Color Combination"
+msgstr ""
+
+#: src/class-modals.php:137
+msgid "Content:"
+msgstr ""
+
+#: src/class-core.php:107
+msgid "Correct Questions"
+msgstr ""
+
+#. Name of the plugin
+msgid "Custom Quiz Types For Multiclass"
+msgstr ""
+
+#: src/class-core.php:458
+msgid "e.g. 23"
+msgstr ""
+
+#: src/class-modals.php:132
+msgid "e.g., fas fa-star"
+msgstr ""
+
+#: src/class-core.php:657
+msgid "Enable 3-2-1 countdown:"
+msgstr ""
+
+#: src/class-core.php:424
+msgid "Enter Coordinates"
+msgstr ""
+
+#: src/class-core.php:457
+msgid ""
+"Enter the coordinates here without spaces or commas (1st digit X-axis, 2nd "
+"digit Y-axis):"
+msgstr ""
+
+#: src/class-core.php:650
+msgid "Enter the time limit in seconds:"
+msgstr ""
+
+#: src/class-topic-time-lock.php:33
+msgid "Enter time lock in seconds:"
+msgstr ""
+
+#: src/class-core.php:601 src/class-core.php:613
+msgid "Events"
+msgstr ""
+
+#: src/class-exam-simulation.php:294
+msgid "Exam Simulation Settings"
+msgstr ""
+
+#: templates/exam-simulation/show_quiz_result_box.php:60
+#, php-format
+msgid "Go to Next %s"
+msgstr ""
+
+#: src/class-customer-contact.php:54
+msgid "Height"
+msgstr ""
+
+#: src/class-modals.php:131
+msgid "Icon Class:"
+msgstr ""
+
+#: src/class-image-drag-drop.php:18
+msgid "Interactive Draggable Area"
+msgstr ""
+
+#: src/class-customer-contact.php:61
+msgid "Left"
+msgstr ""
+
+#: src/class-exam-simulation.php:279
+msgid "Loading"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:587
+msgid "Lösung"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mustafa Kapusuz"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:1076
+msgid "No"
+msgstr ""
+
+#: templates/exam-simulation/show_quiz_result_box.php:69
+msgid "No more quizzes available in this course."
+msgstr ""
+
+#. Metabox ID
+#: src/admin/class-numerical-processing.php:19
+msgid "Numerical Processing Capacity Interval (ms)"
+msgstr ""
+
+#: src/class-modals.php:119 src/class-modals.php:126
+msgid "Off"
+msgstr ""
+
+#: src/class-modals.php:120 src/class-modals.php:127
+msgid "On"
+msgstr ""
+
+#: src/class-core.php:425
+msgid ""
+"One of the nine fields will appear red. It has precisely defined coordinates."
+" Capture the coordinates as quickly as possible. Enter them into the "
+"provided field without spaces or commas."
+msgstr ""
+
+#: src/class-core.php:248
+msgid "Remaining time:"
+msgstr ""
+
+#: src/class-customer-contact.php:62
+msgid "Right"
+msgstr ""
+
+#: src/class-modals.php:117
+msgid "Select On/Off:"
+msgstr ""
+
+#: src/admin/class-numerical-processing.php:36
+msgid "Set the interval in milliseconds:"
+msgstr ""
+
+#: src/class-core.php:499
+msgid "Show answers (cuts 20 seconds)"
+msgstr ""
+
+#. ID
+#: src/class-customer-contact.php:19
+msgid "Speech Bubble Coordinates"
+msgstr ""
+
+#: src/class-customer-contact.php:59
+msgid "Speech Bubble Position"
+msgstr ""
+
+#: src/class-core.php:229
+#, php-format
+msgid ""
+"The 60-minute timer is now active. You can continue with the Pictogram "
+"Recall quiz on %s at %s."
+msgstr ""
+
+#: src/class-core.php:105
+msgid "Time is up!"
+msgstr ""
+
+#: src/class-core.php:631
+msgid "Time Limit (seconds)"
+msgstr ""
+
+#: src/class-topic-time-lock.php:21
+msgid "Time Lock (in seconds)"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:104
+msgid "Verbleibende Zeit:"
+msgstr ""
+
+#: src/class-customer-contact.php:50
+msgid "Width"
+msgstr ""
+
+#: src/class-core.php:106
+msgid "Wrong Questions"
+msgstr ""
+
+#: src/class-customer-contact.php:42
+msgid "X Coordinate"
+msgstr ""
+
+#: src/class-core.php:454
+msgid "X-Axis"
+msgstr ""
+
+#: src/class-customer-contact.php:46
+msgid "Y Coordinate"
+msgstr ""
+
+#: src/class-core.php:435
+msgid "Y-Axis"
+msgstr ""
+
+#: templates/show_quiz_questions_box.php:1072
+msgid "Yes"
+msgstr ""
+
+#: src/class-core.php:235
+msgid "You can continue now!"
+msgstr ""
