@@ -114,8 +114,9 @@ add_action('wp_enqueue_scripts', function () {
 
 function disable_woocommerce_scripts()
 {
-    if (function_exists('is_woocommerce') { // ❌ BUG: missing ')' causes fatal error
+    if (function_exists('is_woocommerce')) {
         if (!is_woocommerce() && !is_cart() && !is_checkout()) {
+            // wp_dequeue_script('woocommerce');
             wp_dequeue_script('wc-cart-fragments');
             wp_dequeue_style('woocommerce-general');
             wp_dequeue_style('woocommerce-layout');
@@ -124,7 +125,6 @@ function disable_woocommerce_scripts()
     }
 }
 add_action('wp_enqueue_scripts', 'disable_woocommerce_scripts', 99);
-
 
 // function add_lazy_loading_to_images($content) {
 //     return str_replace('<img', '<img loading="lazy"', $content);
