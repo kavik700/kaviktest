@@ -176,8 +176,8 @@ function generateCaptcha() {
 	var digits = '0123456789';
 	var letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 	var chars = digits + letters;
-	var captchaLength = 6
-	var captcha = ''
+	var captchaLength = 6;
+	var captcha = '';
 
 	// Ensure at least one digit
 	captcha += digits[Math.floor(Math.random() * digits.length)];
