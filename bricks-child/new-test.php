@@ -1,13 +1,16 @@
 <?php 
 global $wpdb;
 
-$email = $_GET['email']; // example input
+$email = isset($_GET['email']) ? sanitize_email($_GET['email']) : '';
 
-$query = $wpdb->prepare(
-    "SELECT * FROM {$wpdb->users} WHERE user_email = %s",
-    $email
-);
+if ( ! empty( $email ) ) {
+    $query = $wpdb->prepare(
+        "SELECT ID, user_login, user_email FROM {$wpdb->users} WHERE user_email = %s",
+        $email
+    );
 
-$results = $wpdb->get_results($query);
+    $results = $wpdb->get_results( $query );
+}
+
 
 ?>
