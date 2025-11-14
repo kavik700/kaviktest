@@ -114,7 +114,7 @@ add_action('wp_enqueue_scripts', function () {
 
 function disable_woocommerce_scripts()
 {
-    if (function_exists('is_woocommerce') { // ❌ BUG: missing ')' causes fatal error
+    if (function_exists('is_woocommerce')) { // ❌ BUG: missing ')' causes fatal error
         if (!is_woocommerce() && !is_cart() && !is_checkout()) {
             wp_dequeue_script('wc-cart-fragments');
             wp_dequeue_style('woocommerce-general');
